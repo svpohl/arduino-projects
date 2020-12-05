@@ -34,10 +34,11 @@ void setup()
   pinMode(buttonPin, INPUT);
   pinMode(ledPin, OUTPUT);
 
-  digitalWrite(ledPin,buttonState);
+  digitalWrite(ledPin, buttonState);
 }
 
-void displayEnvironment() {
+void displayEnvironment()
+{
   display.setCursor(0, 0);
   display.clearDisplay();
   display.setTextSize(2);
@@ -57,4 +58,3 @@ void loop()
   displayEnvironment();
   digitalWrite(ledPin, digitalRead(buttonPin));
 }
-
